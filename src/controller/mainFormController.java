@@ -46,12 +46,14 @@ public class mainFormController {
                 txtNic.getText()
         );
         boolean isStUpdated = CrudUtil.execute("UPDATE student SET student_name=?, email=?, contact=?, address=?, NIC=? WHERE student_id=?",
-                student.getId(),
+                //student.getId(),
                 student.getName(),
                 student.getEmail(),
                 student.getContact(),
                 student.getAddress(),
-                student.getNic();
+                student.getNic(),
+                student.getId());
+
         if (isStUpdated) {
             new Alert(Alert.AlertType.CONFIRMATION, "Updated!").show();
         } else {

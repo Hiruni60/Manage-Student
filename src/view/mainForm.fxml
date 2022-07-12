@@ -14,7 +14,7 @@
 
 <AnchorPane prefHeight="854.0" prefWidth="1324.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainFormController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000dd" height="854.0" layoutX="-2.0" stroke="BLACK" strokeType="INSIDE" width="585.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000dd" height="854.0" layoutX="-2.0" stroke="BLACK" strokeType="INSIDE" width="1331.0" />
       <Label layoutX="156.0" layoutY="73.0" prefHeight="39.0" prefWidth="314.0" text="MANAGE STUDENT" textFill="WHITE" underline="true">
          <font>
             <Font name="Bell MT Bold" size="30.0" />
@@ -50,7 +50,7 @@
             <Font name="Book Antiqua" size="19.0" />
          </font>
       </Label>
-      <TextField fx:id="txtStId" layoutX="251.0" layoutY="223.0" prefHeight="31.0" prefWidth="261.0">
+      <TextField fx:id="txtStId" layoutX="251.0" layoutY="223.0" onAction="#stIdOnAction" prefHeight="31.0" prefWidth="261.0">
          <font>
             <Font name="Book Antiqua" size="18.0" />
          </font>
@@ -95,19 +95,19 @@
             <Font name="Book Antiqua Bold" size="19.0" />
          </font>
       </Button>
-      <ImageView fitHeight="860.0" fitWidth="749.0" layoutX="582.0" layoutY="-4.0">
+      <ImageView fitHeight="372.0" fitWidth="733.0" layoutX="592.0">
          <image>
             <Image url="@assest/Students-hostel.jpg" />
          </image>
       </ImageView>
-      <TableView fx:id="tblStudent" layoutX="598.0" layoutY="366.0" prefHeight="372.0" prefWidth="718.0">
+      <TableView fx:id="tblStudent" layoutX="582.0" layoutY="427.0" prefHeight="372.0" prefWidth="733.0">
         <columns>
-          <TableColumn fx:id="colId" prefWidth="83.0" text="Id" />
-          <TableColumn fx:id="colName" prefWidth="94.0" text="Name" />
-            <TableColumn fx:id="colEmail" prefWidth="151.0" text="Email" />
-            <TableColumn fx:id="colContact" prefWidth="125.0" text="Contact" />
-            <TableColumn fx:id="colAddress" prefWidth="130.0" text="Address" />
-            <TableColumn fx:id="colNic" prefWidth="134.0" text="NIC" />
+          <TableColumn fx:id="colId" prefWidth="90.0" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="101.0" text="Name" />
+            <TableColumn fx:id="colEmail" prefWidth="147.0" text="Email" />
+            <TableColumn fx:id="colContact" prefWidth="129.0" text="Contact" />
+            <TableColumn fx:id="colAddress" prefWidth="136.0" text="Address" />
+            <TableColumn fx:id="colNic" prefWidth="129.0" text="NIC" />
         </columns>
       </TableView>
    </children>
