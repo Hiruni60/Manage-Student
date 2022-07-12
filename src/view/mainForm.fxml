@@ -1,14 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.mainFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="854.0" prefWidth="1324.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000dd" height="854.0" layoutX="-2.0" stroke="BLACK" strokeType="INSIDE" width="585.0" />
+      <Label layoutX="156.0" layoutY="73.0" prefHeight="39.0" prefWidth="314.0" text="MANAGE STUDENT" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Bell MT Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="284.0" text="Student Name" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="346.0" text="Email" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="226.0" text="Student Id" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="401.0" text="Contact" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="466.0" text="Address" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="527.0" text="NIC" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtStId" layoutX="251.0" layoutY="223.0" prefHeight="31.0" prefWidth="261.0">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtStName" layoutX="251.0" layoutY="281.0" prefHeight="31.0" prefWidth="261.0">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" layoutX="251.0" layoutY="343.0" prefHeight="31.0" prefWidth="261.0">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtContact" layoutX="251.0" layoutY="398.0" prefHeight="31.0" prefWidth="261.0">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="251.0" layoutY="463.0" prefHeight="31.0" prefWidth="261.0">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNic" layoutX="251.0" layoutY="524.0" prefHeight="31.0" prefWidth="261.0">
+         <font>
+            <Font name="Book Antiqua" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAdd" layoutX="53.0" layoutY="642.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="39.0" prefWidth="90.0" text="Add">
+         <font>
+            <Font name="Book Antiqua Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="233.0" layoutY="642.0" mnemonicParsing="false" onAction="#updateOnAction" text="Update">
+         <font>
+            <Font name="Book Antiqua Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="432.0" layoutY="642.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="39.0" prefWidth="90.0" text="Delete">
+         <font>
+            <Font name="Book Antiqua Bold" size="19.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="860.0" fitWidth="749.0" layoutX="582.0" layoutY="-4.0">
+         <image>
+            <Image url="@assest/Students-hostel.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblStudent" layoutX="598.0" layoutY="366.0" prefHeight="372.0" prefWidth="718.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="83.0" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="94.0" text="Name" />
+            <TableColumn fx:id="colEmail" prefWidth="151.0" text="Email" />
+            <TableColumn fx:id="colContact" prefWidth="125.0" text="Contact" />
+            <TableColumn fx:id="colAddress" prefWidth="130.0" text="Address" />
+            <TableColumn fx:id="colNic" prefWidth="134.0" text="NIC" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>
